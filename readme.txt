@@ -2,6 +2,7 @@
 Contributors: rui_mashita
 Tags: seo,meta,meta description,multibyte
 Requires at least: 3.0
+Tested up to: 3.0.1
 Stable tag: trunk
 
 Aioseo Multibyte Descriptions is plugin for multibyte language user, work well with All in One SEO Pack autogenerating META descriptions.
@@ -12,14 +13,17 @@ Aioseo Multibyte Descriptions is  wordpress plugin for multibyte language user ,
 
 == Installation ==
 
-   1. Download and Unzip  
-   2. Upload the aioseo-multibyte-descriptions foldero to your WordPress plugins directory inside of wp-content.  
+1. Download and Unzip.
+1. Upload the aioseo-multibyte-descriptions foldero to your WordPress plugins directory inside of wp-content.  
       (/wp-content/plugins/aioseo-multibyte-descriptions).
-   3. Activate the plugin.
-   4. etting the plugin options. 
+1. Activate the plugin.
+1. Setting the plugin options. 
 
 
 == Changelog ==
+
+= 0.0.4 =
+* Edit readme.txt
 
 = 0.0.3 =
 * Add readme.txt

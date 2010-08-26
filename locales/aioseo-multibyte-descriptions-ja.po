@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: aioseo-multibyte-descriptions 0.0.1\n"
+"Project-Id-Version: aioseo-multibyte-descriptions 0.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-20 18:35+0900\n"
+"POT-Creation-Date: 2010-08-26 08:55+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Rui Mashita <rui_mashita@retujyou.com>\n"
 "Language-Team: \n"
@@ -37,49 +37,76 @@ msgid "Present for Plugin Editor"
 msgstr "プラグイン作者へプレゼント"
 
 #: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:201
-msgid "If you turn off monitor and close your eyes, and imagine that real plugin editor be, the tow things you can do now."
-msgstr "モニタを視界の片隅に追いやって、一瞬目を閉じてください。もし、プラグイン作者のリアルな実体が想像できるなら、今あなたに出来ることが2つあります。"
+msgid "Let the monitor out of your sight ,and close your eyes for a moment. If you can imagine the real existence of the plugin editor, two things you can do right now."
+msgstr "モニタを視界の片隅に追いやって、一瞬目を閉じてください。もし、プラグイン作者のリアルな実存が想像できるなら、今あなたに出来ることが2つあります。"
 
 #: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:205
 msgid "you can send present for me."
 msgstr "作者にプレゼントを贈る。"
 
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:207
+msgid "http://amzn.com/w/37VZ4S64TVJ87"
+msgstr "http://www.amazon.co.jp/wishlist/1PKVG1PQUK0PX"
+
 #: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:213
 msgid "you can donate to me."
 msgstr "作者に寄付する。"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:245
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:220
+msgid "USD"
+msgstr "JPY"
+
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:221
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:224
+msgid "US"
+msgstr "JP"
+
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:222
+msgid "Thank you"
+msgstr "ありがとうございます"
+
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:223
+msgid "for donating"
+msgstr "ご寄付"
+
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:229
+msgid "https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif"
+msgstr "https://www.paypal.com/ja_JP/JP/i/btn/btn_donateCC_LG.gif"
+
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:246
 msgid "Descriptions Setting"
 msgstr "Descriptiion の設定"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:253
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:254
 msgid "META Descriptions Length"
 msgstr "META Description の 文字数"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:254
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:255
 msgid "Autogenerate META Description Length (Multibyte)"
 msgstr "自動作成する META description の文字数 (日本語での長さ)"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:263
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:264
 msgid "Update Options &raquo;"
 msgstr "設定を更新する &raquo;"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:281
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:282
 msgid "Reset Options &raquo;"
 msgstr "設定をリセットする"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:301
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:302
 msgid "Aioseo Multibyte Descriptions Options Updated "
 msgstr "Aioseo Multibyte Descriptions の設定が更新されました。"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:315
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:316
 msgid "Cannot work Aioseo Multibyte Descriptions plugin."
 msgstr "Aioseo Multibyte Descriptions プラグインが正しく機能していません。"
 
-#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:316
+#: wp-content/plugins/aioseo-multibyte-descriptions/aioseo-multibyte-descriptions.php:317
 msgid "Check \"Autogenerate Descriptions\" in"
 msgstr "\"Autogenerate Descriptions\" の項目をチェックしてください -->"
 
+#~ msgid "http://www.amazon.co.jp/wishlist/1PKVG1PQUK0PX"
+#~ msgstr "http://www.amazon.co.jp/wishlist/1PKVG1PQUK0PX"
 #~ msgid ""
 #~ "All in One SEO plugin's autogenerating descriptions pach for multibyte "
 #~ "langage"

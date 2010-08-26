@@ -4,7 +4,7 @@ Plugin Name: Aioseo Multibyte Descriptions
 Plugin URI: http://retujyou.com/aioseo-multibyte-descriptions/
 Description: Aioseo Multibyte Descriptions is plugin for multibyte language user, work well with All in One SEO Pack autogenerating META descriptions.
 Author: Rui Mashita
-Version: 0.0.1
+Version: 0.0.2
 Author URI: http://retujyou.com
 */
 
@@ -198,14 +198,14 @@ if ( !class_exists( 'AioseoMultibyteDescriptions' )  ) {
                     <div title="Click to toggle" class="handlediv"><br></div>
                     <h3 class="hndle"><span><?php _e('Present for Plugin Editor', $this->i18n_domain); ?></span></h3>
                     <div class="inside">
-                        <div><label><?php _e('If you turn off monitor and close your eyes, and imagine that real plugin editor be, the tow things you can do now.', $this->i18n_domain); ?></label>
+                        <div><label><?php _e('Let the monitor out of your sight ,and close your eyes for a moment. If you can imagine the real existence of the plugin editor, two things you can do right now.', $this->i18n_domain); ?></label>
                         </div>
 
                         <div class="alignleft inside" style="width: 45%;">
-                            <p>1. <?php _e('you can send present for me.', $this->i18n_domain); ?> </p>
+                          <p>1. <?php _e('you can send present for me.', $this->i18n_domain); ?> </p>
                             <div class="inside">
-                                <a href="http://www.amazon.co.jp/wishlist/1PKVG1PQUK0PX">
-                                    <img src="<?php echo $this->plugin_dir_url. '/images/amazon.gif' ;?>" width="122" title="amazon wish list" />
+                                <a href="<?php _e('http://amzn.com/w/37VZ4S64TVJ87', $this->i18n_domain); ?>">
+                                    <img src="<?php echo $this->plugin_dir_url. '/images/amazon.gif' ;?>" width="122" title="amazon.co.jp wish list" />
                                 </a>
                             </div>
                         </div>
@@ -217,20 +217,21 @@ if ( !class_exists( 'AioseoMultibyteDescriptions' )  ) {
                                 <input type="hidden" name="item_name" value="All in One SEO Multibyte Descriptions" />
                                 <input type="hidden" name="item_number" value="1" />
                                 <input type="hidden" name="item_number" value="1" />
-                                <input type="hidden" name="currency_code" value="JPY" />
-                                <input type="hidden" name="lc" value="JP" />
-                                <input type="hidden" name="first_name" value="ありがとうございます" />
-                                <input type="hidden" name="last_name" value="御寄付" />
+                                <input type="hidden" name="currency_code" value="<?php _e('USD', $this->i18n_domain); ?>" />
+                                <input type="hidden" name="country" value="<?php _e('US', $this->i18n_domain); ?>" />
+                                <input type="hidden" name="first_name" value="<?php _e('Thank you', $this->i18n_domain); ?>" />
+                                <input type="hidden" name="last_name" value="<?php _e('for donating', $this->i18n_domain); ?>" />
+                                <input type="hidden" name="lc" value="<?php _e('US', $this->i18n_domain); ?>JP" />
                                 <input type="hidden" name="charset" value="UTF-8" />
-                                <input type="hidden" name="country" value="JP" />
+
                                 <input
                                     type="image"
-                                    src="https://www.paypal.com/ja_JP/JP/i/btn/btn_donateCC_LG.gif"
+                                    src="<?php _e('https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif', $this->i18n_domain); ?>"
                                     border="0"
                                     name="submit"
-                                    alt="PayPal- オンラインで安全・簡単に決済"
+                                    alt="PayPal"
                                     />
-                                <img alt="" border="0" src="https://www.paypal.com/ja_JP/i/scr/pixel.gif" width="1" height="1" />
+                                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
                             </form>
                         </div>
                         <div class="clear"></div>

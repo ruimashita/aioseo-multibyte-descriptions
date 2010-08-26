@@ -4,7 +4,7 @@ Plugin Name: Aioseo Multibyte Descriptions
 Plugin URI: http://retujyou.com/aioseo-multibyte-descriptions/
 Description: Aioseo Multibyte Descriptions is plugin for multibyte language user, work well with All in One SEO Pack autogenerating META descriptions.
 Author: Rui Mashita
-Version: 0.0.2
+Version: 0.0.3
 Author URI: http://retujyou.com
 */
 

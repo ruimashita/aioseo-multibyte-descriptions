@@ -4,7 +4,7 @@ Plugin Name: Aioseo Multibyte Descriptions
 Plugin URI: http://retujyou.com/aioseo-multibyte-descriptions/
 Description: Aioseo Multibyte Descriptions is plugin for multibyte language user, work well with All in One SEO Pack autogenerating META descriptions.
 Author: Rui Mashita
-Version: 0.0.3
+Version: 0.0.5
 Author URI: http://retujyou.com
 */
 
@@ -77,12 +77,9 @@ if ( !class_exists( 'AioseoMultibyteDescriptions' )  ) {
 
             $this->load_options();
 
-            add_action('admin_print_styles', array(&$this,'add_admin_print_styles'));
-            add_action('admin_print_scripts', array(&$this,'add_admin_print_scripts'));
 
             add_action('admin_menu', array(&$this, 'add_admin_option_page'));
-//            add_action('admin_notices', array (&$this,"add_admin_notices"));
-            add_action('in_admin_footer', array (&$this,"add_admin_notices"));
+
 
 
             add_filter( 'plugin_action_links_'. plugin_basename(__FILE__), array(&$this, 'add_plugin_action_links'));
@@ -148,31 +145,24 @@ if ( !class_exists( 'AioseoMultibyteDescriptions' )  ) {
             return update_option( $this->option_name, $this->options );
         }
 
-        function  add_admin_print_styles() {
-            wp_enqueue_style('dashboard');
-
-
-        }
-
-        function add_admin_print_scripts() {
-            wp_enqueue_script('dashboard');
-            //          wp_enqueue_script('thickbox');
-        }
-
         // Add option page
         function add_admin_option_page() {
-            add_options_page(
+
+            $option_page = add_options_page(
                     __('Aioseo Multibyte Descriptions Option', $this->i18n_domain),
                     __('Aioseo Multibyte Descriptions', $this->i18n_domain),
-                    8,
+                    8, //'manage_options',
                     basename(__FILE__),
                     array(&$this, 'admin_option_page')
             );
 
+
+            add_action('admin_print_styles-'. $option_page, array(&$this,'add_admin_print_styles'));
+            add_action('admin_print_scripts-'. $option_page, array(&$this,'add_admin_print_scripts'));
+//            add_action('admin_notices', array (&$this,"add_admin_notices"));
+            add_action('in_admin_footer', array (&$this,"add_admin_notices"));
+
         }
-
-
-
 
 
         /**
@@ -289,11 +279,19 @@ if ( !class_exists( 'AioseoMultibyteDescriptions' )  ) {
         }
 
 
+        function  add_admin_print_styles() {
+            wp_enqueue_style('dashboard');
+        }
+
+        function add_admin_print_scripts() {
+            wp_enqueue_script('dashboard');
+            //          wp_enqueue_script('thickbox');
+        }
 
 
         function add_admin_notices() {
 
-            if( "save_options" == $_POST['option_method'] ) :
+            if( "save_options" == @$_POST['option_method'] ) :
                 $this->options['descriptions_length'] = $_POST['descriptions_length'];
                 $this->save_options();
                 ?>
@@ -304,7 +302,7 @@ if ( !class_exists( 'AioseoMultibyteDescriptions' )  ) {
             <?php
             endif;
 
-            if( "reset_options" == $_POST['option_method'] ) :
+            if( "reset_options" == @$_POST['option_method'] ) :
                 $this->delete_options();
                 $this->load_options();
             endif;
@@ -324,7 +322,7 @@ if ( !class_exists( 'AioseoMultibyteDescriptions' )  ) {
 
 
         function add_plugin_action_links($actions) {
-            $link = '<a href="'.get_bloginfo( 'wpurl' ).'/wp-admin/options-general.php?page='.basename(__FILE__).'" >'.__(Settings).'</a>';
+            $link = '<a href="'.get_bloginfo( 'wpurl' ).'/wp-admin/options-general.php?page='.basename(__FILE__).'" >'.__('Settings').'</a>';
             array_unshift($actions, $link);
             return $actions;
         }

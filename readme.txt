@@ -22,6 +22,11 @@ Aioseo Multibyte Descriptions is  wordpress plugin for multibyte language user ,
 
 == Changelog ==
 
+= 0.0.5 =
+* Fix js bug
+* Use Roles and Capabilities (user levels by plugins is deprecated)
+* Tested All in One SEO Pack 1.6.12.2 
+
 = 0.0.4 =
 * Edit readme.txt
 

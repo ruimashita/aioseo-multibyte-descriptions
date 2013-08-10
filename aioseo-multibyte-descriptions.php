@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Aioseo Multibyte Descriptions
-Plugin URI: http://retujyou.com/aioseo-multibyte-descriptions/
+Plugin URI: https://github.com/ruimashita/aioseo-multibyte-descriptions
 Description: Aioseo Multibyte Descriptions is plugin for multibyte language user, work well with All in One SEO Pack autogenerating META descriptions.
 Author: Rui Mashita
-Version: 0.0.5
+Version: 0.0.6
 Author URI: http://retujyou.com
 */
 
